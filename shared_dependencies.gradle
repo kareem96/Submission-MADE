@@ -46,6 +46,9 @@ dependencies {
     implementation "net.zetetic:android-database-sqlcipher:4.4.0"
     implementation "androidx.sqlite:sqlite-ktx:2.1.0"
 
+    implementation "com.google.android.play:core:1.9.0"
+
+
     //shimmer
     implementation "com.facebook.shimmer:shimmer:$shimmer_version"
 }

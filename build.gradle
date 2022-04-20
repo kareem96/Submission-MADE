@@ -10,6 +10,15 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+ext {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility1 = JavaVersion.VERSION_1_8
+    targetCompatibility1 = JavaVersion.VERSION_1_8
+    sourceCompatibility2 = JavaVersion.VERSION_1_8
+    targetCompatibility2 = JavaVersion.VERSION_1_8
+}
+
 ext.lottie_version = "3.6.0"
 ext.kenburn_version = "1.0.7"
 
