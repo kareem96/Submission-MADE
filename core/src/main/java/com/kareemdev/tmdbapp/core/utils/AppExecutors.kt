@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.kareemdev.tmdbapp.core.utils
 
 import android.os.Handler

@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.kareemdev.tmdbapp.favorite.presentation
 
 import android.content.Intent
