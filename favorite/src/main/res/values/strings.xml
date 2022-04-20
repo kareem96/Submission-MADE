@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="no_data">Empty data</string>
+    <string name="empty_data">Empty data</string>
 </resources>

@@ -4,9 +4,9 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:title="@string/home" />
     <item
         android:id="@+id/favorite"
         android:icon="@drawable/ic_favorite_black"
-        android:title="Favorite" />
+        android:title="@string/favorite" />
 </menu>

@@ -46,6 +46,7 @@
         android:layout_margin="16dp"
         app:layout_anchorGravity="bottom|end"
         app:layout_anchor="@id/app_bar"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:contentDescription="@string/todo" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -15,7 +15,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="4dp"
         android:gravity="center"
-        android:text="something_wrong"
+        android:text="@string/something_wrong"
         android:textSize="18sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

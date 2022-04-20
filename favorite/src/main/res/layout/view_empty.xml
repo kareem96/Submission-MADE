@@ -10,7 +10,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="4dp"
         android:gravity="center"
-        android:text="Empty data"
+        android:text="@string/empty_data"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

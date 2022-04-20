@@ -10,16 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.kareemdev.tmdbapp.presentation.adpater.MovieAdapter
 import com.kareemdev.tmdbapp.presentation.detail.DetailMovieActivity
 import com.kareemdev.tmdbapp.favorite.databinding.FragmentFavoriteBinding
-import com.kareemdev.tmdbapp.favorite.favoriteModule
+import com.kareemdev.tmdbapp.favorite.di.favoriteModule
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
 
-
-/**
- * A simple [Fragment] subclass.
- * Use the [FavoriteFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FavoriteFragment : Fragment() {
     private val favoriteViewModel: FavoriteViewModel by viewModel()
     private var _binding: FragmentFavoriteBinding? = null

@@ -1,4 +1,4 @@
-package com.kareemdev.tmdbapp.favorite
+package com.kareemdev.tmdbapp.favorite.di
 
 import com.kareemdev.tmdbapp.favorite.presentation.FavoriteViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel

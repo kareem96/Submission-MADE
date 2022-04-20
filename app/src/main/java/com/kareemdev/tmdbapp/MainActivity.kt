@@ -6,10 +6,10 @@ import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView
 import com.kareemdev.tmdbapp.databinding.ActivityMainBinding
 import com.kareemdev.tmdbapp.presentation.home.HomeFragment
-import kotlinx.android.synthetic.main.activity_main.view.*
+//import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity(){
     private lateinit var binding: ActivityMainBinding
@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity(){
         setContentView(binding.root)
 
         supportActionBar?.title = title
-        setSupportActionBar(binding.appBarLayout.toolbar)
+        setSupportActionBar(binding.toolbar)
         navigationChange(HomeFragment())
 
-        binding.bottomNavigation.setOnNavigationItemSelectedListener(navSelectedListen)
+        binding.bottomNavigation.setOnItemSelectedListener(navSelectedListen)
 
     }
 
@@ -35,19 +35,20 @@ class MainActivity : AppCompatActivity(){
             .commit()
     }
 
-    private val navSelectedListen = BottomNavigationView.OnNavigationItemSelectedListener{
+    private val navSelectedListen = NavigationBarView.OnItemSelectedListener{
 
         when(it.itemId){
             R.id.home -> {
                 navigationChange(HomeFragment())
-                return@OnNavigationItemSelectedListener true
+                true
             }
             R.id.favorite -> {
                 moveToFavoriteFragment()
-                return@OnNavigationItemSelectedListener true
+                true
             }
+            else -> false
         }
-        false
+
     }
 
     private fun moveToFavoriteFragment() {

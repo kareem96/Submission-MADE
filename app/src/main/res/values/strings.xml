@@ -20,4 +20,6 @@
     <string name="release">RELEASE</string>
     <string name="rating">RATING</string>
     <string name="todo">TODO</string>
+    <string name="favorite">Favorite</string>
+    <string name="home">Home</string>
 </resources>

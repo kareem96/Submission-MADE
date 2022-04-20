@@ -14,12 +14,6 @@ import com.kareemdev.tmdbapp.databinding.FragmentHomeBinding
 import com.kareemdev.tmdbapp.presentation.detail.DetailMovieActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
 
     private val homeViewModel: HomeViewModel by viewModel()

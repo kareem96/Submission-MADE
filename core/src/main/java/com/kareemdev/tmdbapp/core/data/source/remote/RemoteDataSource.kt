@@ -12,8 +12,6 @@ import kotlinx.coroutines.flow.flowOn
 
 class RemoteDataSource constructor(private val apiService: ApiService){
 
-    /*private val apiKey = "0be47f8a233f2718d99d0c366369f1f8"*/
-
     suspend fun getAllMovie(): Flow<ApiResponse<List<MovieResponse>>>{
         return flow {
             try {
